@@ -1,0 +1,53 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Control page</title>
+<style type="text/css">
+
+.keyboardkey {
+	display:inline-block;
+	border:1px solid black;
+	position:relative;
+	height:50px;
+	width:50px;
+}
+</style>
+
+<script type="text/javascript">
+
+var ws;
+
+function init() {
+	ws = new WebSocket('***SOCKADDR***');	
+}
+
+function down(key) {
+	ws.send(key.toUpperCase());
+}
+
+function up(key) {
+	ws.send(key.toLowerCase());
+}
+
+
+</script>
+
+</head>
+<body onload='init()'>
+<div class="keyboardkey" onmousedown="down('A')" ontouchstart="down('A')" onmouseup="up('A')" ontouchend="up('A')">C</div>
+<div class="keyboardkey" onmousedown="down('B')" ontouchstart="down('B')" onmouseup="up('B')" ontouchend="up('B')">C#</div>
+<div class="keyboardkey" onmousedown="down('C')" ontouchstart="down('C')" onmouseup="up('C')" ontouchend="up('C')">D</div>
+<div class="keyboardkey" onmousedown="down('D')" ontouchstart="down('D')" onmouseup="up('D')" ontouchend="up('D')">D#</div>
+<div class="keyboardkey" onmousedown="down('E')" ontouchstart="down('E')" onmouseup="up('E')" ontouchend="up('E')">E</div>
+<div class="keyboardkey" onmousedown="down('F')" ontouchstart="down('F')" onmouseup="up('F')" ontouchend="up('F')">F</div>
+<div class="keyboardkey" onmousedown="down('G')" ontouchstart="down('G')" onmouseup="up('G')" ontouchend="up('G')">F#</div>
+<div class="keyboardkey" onmousedown="down('H')" ontouchstart="down('H')" onmouseup="up('H')" ontouchend="up('H')">G</div>
+<div class="keyboardkey" onmousedown="down('I')" ontouchstart="down('I')" onmouseup="up('I')" ontouchend="up('I')">G#</div>
+<div class="keyboardkey" onmousedown="down('J')" ontouchstart="down('J')" onmouseup="up('J')" ontouchend="up('J')">A</div>
+<div class="keyboardkey" onmousedown="down('K')" ontouchstart="down('K')" onmouseup="up('K')" ontouchend="up('K')">B</div>
+<div class="keyboardkey" onmousedown="down('L')" ontouchstart="down('L')" onmouseup="up('L')" ontouchend="up('L')">H</div>
+<div class="keyboardkey" onmousedown="down('M')" ontouchstart="down('M')" onmouseup="up('M')" ontouchend="up('M')">C</div>
+
+</body>
+</html>
+

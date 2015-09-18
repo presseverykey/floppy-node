@@ -1,0 +1,196 @@
+#First
+H
+h
+H
+h
+T
+t
+T
+t
+H
+h
+H
+h
+T
+
+t
+
+H
+h
+H
+h
+T
+t
+T
+t
+H
+h
+H
+h
+T
+
+t
+
+F
+f
+F
+f
+R
+r
+R
+r
+F
+f
+F
+f
+R
+
+r
+
+A
+a
+A
+a
+M
+m
+M
+m
+A
+a
+A
+a
+M
+
+m
+
+# second
+H
+h
+H
+h
+T
+t
+T
+t
+H
+h
+H
+h
+T
+
+t
+
+H
+h
+H
+h
+T
+t
+T
+t
+H
+h
+H
+h
+T
+
+t
+
+F
+f
+F
+f
+R
+r
+R
+r
+F
+f
+F
+f
+R
+
+r
+
+A
+a
+A
+a
+M
+m
+M
+m
+D
+
+dP
+
+pF
+
+fR
+r
+#third
+H
+h
+H
+h
+T  W
+t
+T  w
+t
+H  W
+h
+H 
+h  w
+T
+
+t
+
+H  W
+h  w
+H  W
+h
+T  w
+t
+T  W
+t
+H  w
+h
+H
+h
+T
+
+t
+
+F
+f
+F
+f
+R  W
+r
+R  w
+r
+F  W
+f
+F 
+f  w
+R
+
+r
+
+A  W
+a
+A  wY
+a
+M  y
+m
+M  W
+m
+D
+
+dP
+
+pF wV
+
+fR
+r  v
+--

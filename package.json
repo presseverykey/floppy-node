@@ -1,0 +1,17 @@
+{
+  "author": "Matthias Krauß� <matthias@press-any-key.de>",
+  "name": "midi-websocket",
+  "description": "midi websocket",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "dependencies": {
+    "nodejs-websocket": "~1.4.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
