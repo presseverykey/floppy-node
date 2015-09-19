@@ -63,19 +63,23 @@ function songTick() {
 	if (currentSong) {
 		songTicks++;
 		var songLen = currentSong.length;
-		if (songTicks >= songLen) {
-			songTicks = 0;
+		if (songTicks >= songLen) {	//song over
+			stopSong();
+			return;
 		}
 		var line = currentSong[songTicks];
 		while ((line.length > 0) && (line.charCodeAt(0) == 35)) {	// skip comment lines (#)
-			songTicks = (songTicks+1 % currentSong.length);
+			songTicks++;
+			if (songTicks >= songLen) {
+				stopSong();
+				return;
+			}
 			line = currentSong[songTicks];
 		}
 		if ((line.length > 0) && (line.charCodeAt(0) == 45)) {	// -: end of song, wrap
 			songTicks = 0;
 			line = currentSong[songTicks];
 		}
-		console.log("song playing "+line);
 		handleStringInput(line);
 	} else {
 		idleTicks++;
@@ -122,7 +126,6 @@ function initMidiOut() {
 	// Count the available output ports. 
 	for (var i=0; i<midiout.getPortCount();i++) {
 		var name = midiout.getPortName(i);
-console.log(name)
 		if (name.match(MIDI_OUTPUT_NAME)) {
 			console.log('MIDI output found!');
 			midiout.openPort(i);
@@ -143,7 +146,7 @@ function initMidiIn() {
 	for (var i=0; i<midiin.getPortCount();i++) {
 		var name = midiin.getPortName(i);
 		console.log("scanning input "+i+" : "+name);
-		if (name.match( MIDI_INPUT_NAME)) {
+		if (name.match(MIDI_INPUT_NAME)) {
 			console.log('MIDI input found!');
 			midiin.openPort(i);
 			midiconn = true;
