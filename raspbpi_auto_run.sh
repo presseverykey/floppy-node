@@ -5,5 +5,5 @@ LOG_PATH=/home/pi/logs
 
 echo "Starting..." >> ${LOG_PATH}/floppy.log
 date >> ${LOG_PATH}/floppy.log
-${NODE_PATH}/node ${SCRIPT_PATH}/server.js >> ${LOG_PATH}/floppy.log 2>&1 &
+${NODE_PATH}/node ${SCRIPT_PATH}/midi_file.js >> ${LOG_PATH}/floppy.log 2>&1 &
 echo $! > ${LOG_PATH}/node.pid

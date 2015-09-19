@@ -2,6 +2,9 @@ var midi = require('midi');
 var midifileplayer = require('./playSong')
 
 
+var NUM_SECS_TO_PAUSE_ON_KEYBOARD = 8;
+var DEF_MIDI_FILE_NAME = "/home/pi/node-midi-websocket/elefantgehen.mid"
+
 var MIDIOUT = null
 var MIDIIN = null
 var MIDIFILEPLAYER = null
@@ -74,7 +77,7 @@ function handleKeyboardMidiMessage(message) {
   if (restartTimeout) {
     clearTimeout(restartTimeout)
   }
-  restartTimeout = setTimeout(midifileplayer.play, 8000)
+  restartTimeout = setTimeout(midifileplayer.play, NUM_SECS_TO_PAUSE_ON_KEYBOARD * 1000)
 
 	MIDIOUT.sendMessage(message);
 }
@@ -101,7 +104,7 @@ function initMidiFilePlayer() {
     sendNoteOff: sendNoteOff,
     sendAllOff: sendAllOff
   }
-  var fn = process.argv[2] || './elefantgehen.mid'
+  var fn = process.argv[2] || DEF_MIDI_FILE_NAME
   midifileplayer.initialize(fn, mididevice)
 }
 

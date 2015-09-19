@@ -88,12 +88,13 @@ function _play() {
   if (currentNode.next) {
     var delta_ticks = currentNode.next.delta
     var delta_secs = delta_ticks * (1/BEATS_PER_SEC)
-    setTimeout(_play, delta_secs*5000)
+    setTimeout(_play, delta_secs*2000)
     currentNode = currentNode.next
   } else {
     console.log("song done ...")
     currentNode = chain
-    setTimeout(_play, 8000)
+    stop()
+    setTimeout(play, 8000)
   }
 }
 // pauses at current position, restart with play
