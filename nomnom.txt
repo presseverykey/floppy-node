@@ -1,0 +1,354 @@
+T
+t
+T
+t
+T
+t
+Q
+q
+T
+t
+V
+v
+T
+t
+
+
+Q
+q
+Q
+q
+Q
+q
+O
+o
+Q
+q
+R
+r
+Q
+q
+O
+o
+M
+m
+M
+m
+M
+m
+J
+j
+M
+m
+O
+o
+M
+m
+
+
+O
+o
+O
+o
+O
+o
+M
+m
+O
+o
+Q
+q
+O
+o
+
+
+#single base
+T M
+t  
+T m
+t
+T M
+t
+Q m
+q 
+T M
+t
+V m
+v
+T M
+t
+   m
+
+Q  J
+q
+Q j
+q
+Q J
+q
+O j
+o
+Q J
+q
+R j
+r
+Q J
+q
+O j
+o
+M F 
+m 
+M f
+m
+M F 
+m
+J  f
+j
+M F
+m
+O f
+o
+M F
+m
+   f
+
+O H
+o
+O h
+o
+O H
+o
+M h
+m
+O H
+o
+Q h
+q
+O H
+o 
+  h
+
+# octave bass
+T A
+t  
+T aM
+t
+T mA
+t
+Q aM
+q 
+T mA
+t
+V aM
+v
+T mA
+t
+   aM
+
+Q  mJ
+q
+Q jV
+q
+Q vJ
+q
+O jV
+o
+Q vJ
+q
+R jV
+r
+Q vJ
+q
+O jV
+o
+M F 
+m 
+M fR
+m
+M rF 
+m
+J  fR
+j
+M rF
+m
+O fR
+o
+M rF
+m
+   fR
+
+O rH
+o
+O hT
+o
+O tH
+o
+M hT
+m
+O tH
+o
+Q hT
+q
+O tH
+o 
+  h
+
+#
+# octave bass
+T A
+t  
+T aM
+t
+T mA
+t
+Q aM
+q 
+T mA
+t
+V aM
+v
+T mA
+t
+   aM
+
+Q  mJ
+q
+Q jV
+q
+Q vJ
+q
+O jV
+o
+Q vJ
+q
+R jV
+r
+Q vJ
+q
+O jV
+o
+M F 
+m 
+M fR
+m
+M rF 
+m
+J  fR
+j
+M rF
+m
+O fR
+o
+M rF
+m
+   fR
+
+O rH
+o
+O hT
+o
+O tH
+o
+M hT
+m
+O tH
+o
+Q hT
+q
+O tH
+o 
+  h
+
+#
+#
+T M
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tm Q J
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+qj M F 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mf O H
+oh
+OH
+oh
+OH
+oh
+OH
+oh
+OH
+oh
+OH
+oh
+OH
+oh
+OH
+oh
+##
+M
+m
+M
+m
+M
+m
+M
+m
+M
+m
+M
+m
+M
+m
+M
+m
+M
+
+m
+
+
+
+
+
+
+
+
